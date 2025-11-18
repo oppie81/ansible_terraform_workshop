@@ -1,7 +1,7 @@
 # Welcome to the Ansible part of the workshop
 
 ## The basics
-- Where is the Ansible Automation Server: https://caap.fvz.ansible-labs.de
+- Where is the Ansible Automation Server: [here](https://caap.fvz.ansible-labs.de)
 - What is my username: the part before the @ of the email address you gave us
 - What is my password: it's on the whiteboard in the workshop room
 
