@@ -19,8 +19,9 @@ AAP will use the integrations with Terraform to be able to do it's thing on the 
 So what are the basics we have set up for you:
 1. A machine credential named RHEL. You use this machine credential to be able to run your playbooks on the providioned servers.
 2. A Custom Credential _Type_ called "Hashicorp Terraform Cloud". You use this later to create your credential.
-3. A token to be able to do stuff in Hashicorp Terraform Cloud. This token is available at: <TBC>
-4. An Execution Environment called "ee-tech-x-change-nl" in AAP that provides all the collections and dependencies you need in this workshop.
+3. An Inventory called "local" with the host "localhost" for api based automations.
+4. A token to be able to do stuff in Hashicorp Terraform Cloud. This token is available at: <TBC>
+5. An Execution Environment called "ee-tech-x-change-nl" in AAP that provides all the collections and dependencies you need in this workshop.
 
 ## Building Blocks
 First, you need to create some building blocks.
@@ -62,9 +63,7 @@ Now that you have the basics set up (project, credential, inventory), you can de
 - deploy_website.yml. This playbook will dpeloy a website
 Have a look at the playbooks in this repo to get a sense of what they do.
 
-Create a Job Template for each of these playbooks.
-- The job template to deploy a webserver needs a var called "mode" with a value of "deploy"
-- 
+Create a Job Template for each of these playbooks. 
 
 
 
