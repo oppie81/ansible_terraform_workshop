@@ -10,5 +10,5 @@
   tasks:
   - name: Copy the code from repository
     git:
-      repo: "{{ git_base }}/website.git"
+      repo: "git_base: https://github.com/TechXchangeNL/website.git"
       dest: /var/www/html/
