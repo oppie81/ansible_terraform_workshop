@@ -11,7 +11,7 @@
       tf_timeout: 6000
       poll: true
       poll_interval: 5
-      poll_timeout: 120
+      poll_timeout: 1200
       state: "present"
     timeout: 10000
     register: result
