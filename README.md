@@ -1,11 +1,5 @@
 # Welcome to the Ansible part of the workshop
 
-## Intro
-For Terraform there are currently 2 certified ansible collections:
-1. [cloud.terraform](https://console.redhat.com/ansible/automation-hub/repo/published/cloud/terraform/) - Maintained by Red Hat. It uses the terraform cli to talk to terraform.
-2. [hashicorp.terraform](https://console.redhat.com/ansible/automation-hub/repo/published/hashicorp/terraform/) - Maintained by HashiCorp
-All future development is on the hashicorp.terraform collection. It is the collection for integration with HashiCorp Terraform Enterprise and Cloud and it is based on the provided API. This workshop uses this collection where possible and falls back to the older cloud.terraform collection where needed. 
-
 ## The basics
 - Where is the Ansible Automation Server? -> [here](https://caap.fvz.ansible-labs.de)
 - What is my username? -> It is the email address you gave us when you signed up for this workshop
@@ -30,16 +24,23 @@ So what are the basics we have set up for you:
 5. An Execution Environment called `ee-tech-x-change-nl` in AAP that provides all the collections and dependencies you need in this workshop.
 
 
+## Collections
+For Terraform there are currently 2 certified ansible collections that are made available in this workshop through the Execution Environment:
+1. [cloud.terraform](https://console.redhat.com/ansible/automation-hub/repo/published/cloud/terraform/) - Maintained by Red Hat. It uses the terraform cli to talk to terraform.
+2. [hashicorp.terraform](https://console.redhat.com/ansible/automation-hub/repo/published/hashicorp/terraform/) - Maintained by HashiCorp
+All future development is on the hashicorp.terraform collection. It is the collection for integration with HashiCorp Terraform Enterprise and Cloud and it is based on the provided API. This workshop uses this collection where possible and falls back to the older cloud.terraform collection where needed. 
+
+
 ## Building Blocks
 You need to create some building blocks in AAP for this workshop. This document explains what you need to make. When you are done, go back to the README.md in the workshop repo.
 
-note: wherever you can and/or need to specify an Organisation, choose `TechXchangeNL`.
+note: wherever you can and/or need to specify an Organization, choose `TechXchangeNL`, unless stated otherwise.
 
 
 ### Project
 You need to create a project in AAP. The project is your repository with playbooks.
-- Fork the
-- The location of the git repo with the platybooks for this workshop: [here](https://github.com/TechXchangeNL/ansible.git)
+- Fork the the Ansible repository that you can find [here](https://github.com/TechXchangeNL/ansible.git)
+- Create a project in `Automation Execution > Projects` and use this fork. Enable `Update REvisions on Job Lauch`
 
 
 ### Controller Credentials
