@@ -122,7 +122,7 @@ These are made under `Automation Decisions > Infrastructure > Credentials` We ne
 - A credential to enable EDA rulebook actions to launch _Job Templates_ and _Workflows_ in the Controller. It needs to be of type `Red Hat Ansible Automation Platform`. Use your provided username and password and the url `https://caap.fvz.ansible-labs.de/api/controller`
 - A credential that _HCP Terraform Actions_ will use to be able to send events to EDA. It needs to be of type `Basic Event Stream`. You can came up with any username and password as long as you remember them for when they are needed to configure the _HCP Terraform Action_.
 
-> [!TIP] do NOT use the username / password combo that you have to log into AAP.
+ [!TIP] do NOT use the username / password combo that you have to log into AAP.
 
 ### Event Stream
 Define an Event Stream. This is used by _Terraform Actions_ later on to emit events to. Use the event stream type `Basic Event Stream` and provide the credential of the same type you just made. After creation it will generate a unique URL that _Terraform Actions_ will send its events to and is protected, so you also need the _username_ and _password_ of the credential. Suggestion for a name: "Terraform Actions".
