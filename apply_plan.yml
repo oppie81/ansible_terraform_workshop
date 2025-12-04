@@ -7,6 +7,9 @@
 			organization: "TechXchangeNL"
 			run_message: "Deploy new application version"
 			auto_apply: true
+      poll_interval: 5
+      poll_timeout: 1200
+      tf_timeout: 6000
 			#variables:
 			#	- key: "environment"
 			#		value: "production"
