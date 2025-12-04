@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Apply a terraform plan
-			hashicorp.terraform.run:
+      hashicorp.terraform.run:
         workspace: "terraform_workshop"
         organization: "TechXchangeNL"
         run_message: "Deploy new application version"
