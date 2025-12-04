@@ -1,19 +1,20 @@
+---
 - name: HCP
   hosts: all
   tasks:
     - name: Apply a terraform plan
 			hashicorp.terraform.run:
-			workspace: "terraform_workspace"
-			organization: "TechXchangeNL"
-			run_message: "Deploy new application version"
-			auto_apply: true
-      poll_interval: 5
-      poll_timeout: 1200
-      tf_timeout: 6000
-			#variables:
-			#	- key: "environment"
-			#		value: "production"
-			#	- key: "app_version"
-			#		value: "v1.2.3"
-			state: "present"
+        workspace: "terraform_workshop"
+        organization: "TechXchangeNL"
+        run_message: "Deploy new application version"
+        auto_apply: true
+        poll_interval: 5
+        poll_timeout: 1200
+        tf_timeout: 6000
+        #variables:
+        #	- key: "environment"
+        #		value: "production"
+        #	- key: "app_version"
+        #		value: "v1.2.3"
+        state: "present"
 
